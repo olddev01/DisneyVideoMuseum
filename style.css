@@ -1,0 +1,117 @@
+/* Search Bar Styles */
+.search-bar {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 60%; /* Wider search bar for visibility */
+    padding: 14px 20px; /* Increased padding */
+    font-size: 18px; /* Larger font size */
+    border: 2px solid #222831; /* Dark border */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #0f3460; /* Dark blue background consistent with the website */
+    color: #eee; /* Light text color */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar input[type="text"]:focus {
+    outline: none;
+    background-color: #16213e; /* Slightly lighter background on focus */
+    border-color: #00adb5; /* Accent color border on focus */
+    box-shadow: 0 6px 18px rgba(0, 173, 181, 0.8); /* Brighter shadow on focus */
+    width: 62%; /* Slightly wider on focus */
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #aaa; /* Light placeholder color */
+    font-style: italic;
+}
+
+.search-bar input[type="text"]:hover {
+    background-color: #1a1a2e; /* Lighter background on hover */
+    border-color: #00adb5; /* Accent color border on hover */
+}
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode header {
+    background: linear-gradient(to right, #e0e0e0, #d0d0d0);
+}
+
+.light-mode .card {
+    background-color: #f0f0f0;
+}
+
+.light-mode th {
+    background-color: #d0d0d0;
+    color: #000000;
+}
+
+.light-mode td {
+    background-color: #e0e0e0;
+    border: 1px solid #bbb;
+}
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 24px;
+    color: #ffed00;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: #ffd700; /* Highlight on hover */
+}
+
+.user-rating {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.loading-spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

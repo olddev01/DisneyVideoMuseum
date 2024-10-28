@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney Video Museum</title>
+  <style>
+    body {
+      background-color: #0d1b1e;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #1b2a30;
+    }
+    header img {
+      width: 80%;
+      max-width: 600px;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .stats, .contact, .news {
+      background-color: #16262c;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .stats h2, .news h2 {
+      color: #ffed00;
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .contact a {
+      color: #00acee;
+      text-decoration: none;
+    }
+    .database {
+      text-align: center;
+      margin-top: 20px;
+      color: red;
+      font-weight: bold;
+    }
+    .latest-vhs {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #444;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #2d3d42;
+      color: #ffed00;
+    }
+    td img {
+      width: 80px;
+      height: auto;
+      border-radius: 4px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1b2a30;
+      color: #888;
+    }
+    .footer a {
+      color: #00acee;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="header_image.png" alt="Welcome to the Disney Video Museum">
+</header>
+
+<div class="container">
+  <div class="contact">
+    <h3>Contact:</h3>
+    <p>Email: <a href="mailto:disneyvhmuseum@gmail.com">disneyvhmuseum@gmail.com</a></p>
+    <p><a href="https://patreon.com">Patreon</a> | <a href="https://discord.gg/Kxm789SmFs">Discord</a></p>
+</div>
+<!-- YouTube Channels Section -->
+<style>
+    .channel-links {
+      display: flex;
+      justify-content: center; /* Center the channels horizontally */
+      flex-wrap: wrap; /* Allow wrapping to next line if needed */
+      margin: 20px 0; /* Optional: add some margin */
+    }
+    .channel {
+      text-align: center; /* Center the text inside each channel */
+      margin: 10px; /* Optional: spacing between channels */
+    }
+    img {
+      max-width: 100%; /* Make sure images are responsive */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+<!-- YouTube Channels Section -->
+<style>
+    .channel-links {
+      display: flex;
+      justify-content: center; /* Center the channels horizontally */
+      flex-wrap: wrap; /* Allow wrapping to next line if needed */
+      margin: 20px 0; /* Optional: add some margin */
+    }
+    .channel {
+      text-align: center; /* Center the text inside each channel */
+      margin: 10px; /* Optional: spacing between channels */
+      text-decoration: none; /* Remove underline from links */
+      color: inherit; /* Use inherited text color */
+    }
+    .channel img {
+      max-width: 100%; /* Make sure images are responsive */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 8px; /* Optional: add rounded corners */
+    }
+  </style>
+  
+  <div class="channel-links">
+    <!-- First Channel -->
+    <a class="channel" href="https://www.youtube.com/channel/UCvwpjwrrlTaq28uQYbV2OtA" target="_blank">
+      <img src="channel_logo_1.png" alt="DisneyVHSMuseum Logo">
+      <div class="channel-info">
+        <strong>DisneyVHSMuseum</strong>
+        <div class="subscribe-button">
+          <div class="g-ytsubscribe" data-channelid="UCvwpjwrrlTaq28uQYbV2OtA" data-layout="default" data-theme="dark" data-count="default"></div>
+        </div>
+      </div>
+    </a>
+    <!-- Add more channels here -->
+  </div>
+   
+
+  <div class="news">
+    <h2>Site News</h2>
+    <p>To continue operation of the site, we can no longer be on a free account due to space. We are accepting donations for 8 years of hosting. If you would like to donate, please contact us! Current donations: $220 of $488.</p>
+  </div>
+
+</style>
+</head>
+</head>
+<body>
+
+
+  <div class="latest-vhs">
+    <h2>Latest Disney VHS Additions (NTSC)</h2>
+    <table>
+      <tr>
+        <!-- Search Bar Section -->
+<div class="container">
+    <div class="search-bar">
+        <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="🔍 Search VHS titles, collections, etc...">
+    </div>
+</div>
+
+        <th>Cover</th>
+        <th>Title</th>
+        <th>Collection</th>
+        <th>Rarity</th>
+        <th>Release</th>
+        <th>Update</th>
+      </tr>
+      <tr>
+        <td><img src="parent_trap.jpg" alt="Parent Trap VHS Cover"></td>
+        <td>Parent Trap, The (1995)</td>
+        <td>Family Film Collection</td>
+        <td>★★☆☆☆</td>
+        <td>April 1996</td>
+        <td>Updated Scans</td>
+      </tr>
+      <tr>
+        <td><img src="pooh_adventure.jpg" alt="Pooh's Grand Adventure VHS Cover"></td>
+        <td>Pooh's Grand Adventure (1997)</td>
+        <td>Disney Home Video</td>
+        <td>★★★☆☆</td>
+        <td>August 1997</td>
+        <td>New Addition</td>
+      </tr>
+      <tr>
+        <td><img src="anne_of_avonlea.jpg" alt="Anne of Avonlea VHS Cover"></td>
+        <td>Anne of Avonlea (1987)</td>
+        <td>Disney Home Video</td>
+        <td>★★★☆☆</td>
+        <td>January 1988</td>
+        <td>New Addition</td>
+      </tr>
+      
+      <!-- Add more rows as needed -->
+    </table>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Designed by zalajr | all rights reserverd |
+</div>
+
+</body>
+</html>
+<link rel="stylesheet" href="script.js">

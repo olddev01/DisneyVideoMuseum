@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="members.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Chat Dropdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="chat-container">
+    <button class="chat-toggle" onclick="toggleChat()">Chat with Members</button>
+    <div class="chat-dropdown" id="chatDropdown">
+        <div class="chat-header">Member Chat</div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message">Welcome to the member chat!</div>
+            <!-- Additional messages can be added here -->
+        </div>
+        <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="sendMessage(event)">
+    </div>
+</div>
+<link rel="stylesheet" href="script.js">
+
+<script src="script.js"></script>
+</body>
+</html>
